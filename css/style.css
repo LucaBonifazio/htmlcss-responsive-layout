@@ -51,7 +51,7 @@ img{
     display: none;
 }
 
-.nav-top .hamburger{
+.hamburger .fa-bars{
     color: white;
     font-size: 1.25rem;
 }
@@ -81,7 +81,7 @@ img{
     }
 
     .nav-top .nav-link:hover{
-        background-color: aquamarine;
+        background-color: rgb(100, 234, 234);
     }
     
     .nav-top .btn{
@@ -98,4 +98,121 @@ img{
         display: none;
     }
     
+}
+
+/* main */
+
+/* section 1 */
+
+/* .cards{
+    display: flex;
+    flex-direction: column;
+} */
+
+.card{
+    background-color: #B5DDFF;
+    border-radius: 1rem;
+    padding: 0 1em;
+    margin: 1rem auto;
+}
+
+.card h2{
+    color: #0084FD;
+    padding: .5em 0;
+}
+
+.card p{
+    padding: 1em 0;
+}
+
+.big-card .btn-apple{
+    background-color: #0084FD;
+    color: white;
+    padding: .4em 3em;
+}
+
+.big-card-img img{
+    display: block;
+    padding-top: 2em;
+}
+
+.icon-card{
+    text-align: center;
+    padding: 1rem;
+}
+
+.fa-solid{
+    font-size: 5rem;
+    color: #0084FD;
+}
+
+/* @media screen and (min-width: 811px) {
+    .cards{
+        display: flex;
+        flex-direction: row;
+    }
+
+}  */
+
+/* section 2 */
+
+.purple-sect{
+    background-color: #9792E4;
+    padding: 1.5rem;
+}
+
+.planner{
+    color: white;
+}
+
+.plan-text{
+    padding-top: 2rem;
+}
+
+.plan-text h2{
+    padding-bottom: 2rem;
+}
+
+.plan-text p{
+    padding-bottom: 2rem;
+}
+
+.develop {
+    background-color: white;
+    border-radius: 2em;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn-purple {
+    background-color: #9792E4;
+    border-radius: 10rem;
+    padding: 1em;
+}
+
+.fa-arrow-down{
+    color: black;
+    font-size: 1em;
+}
+
+/* section 3 */
+
+.testimonial{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.testimonial h1{
+    color: #9792E4;
+    padding: 2rem 0;
+}
+
+.testimonial-card{
+    background-color: #9792E4;
+    border-radius: 2em;
+    text-align: center;
+}
+
+.card-img{
+    border-radius: 10rem;
 }
