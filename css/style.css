@@ -310,7 +310,7 @@ img{
 }
 
 .small-container p{
-    padding: 2em 0;
+    padding: 2em 1em;
 }
 
 .free{
@@ -322,4 +322,10 @@ img{
     background-color: white;
     color:#9792E4;
     padding: 1em 4em;
+}
+
+/* footer */
+
+footer{
+    background-color: #333333;
 }
