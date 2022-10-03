@@ -263,3 +263,63 @@ img{
 }
 
 /* section 5 */
+
+.about-us h1{
+    font-size: 3rem;
+    color: #9792E4;
+}
+
+.about-us p{
+    padding: 2em 0;
+}
+
+.img-about{
+    position: relative;
+}
+
+.img-about img{
+    border-radius: 10rem;
+    max-width: 20em;
+    padding: 2em;
+}
+
+.img-about .commas{
+    position: absolute;
+    top: 0em;
+    left: 2.3em;
+    color: #9792E4;
+    font-size: 6em;
+}
+
+.text-about{
+    color: #9792E4;
+    font-size: 1.5em;
+    padding: 1em 0;
+}
+
+/* section 6 */
+
+.purple-sect{
+    margin-top: 3em;
+}
+
+.small-container{
+    max-width: 810px;
+    text-align: center;
+    color: white;
+}
+
+.small-container p{
+    padding: 2em 0;
+}
+
+.free{
+    font-size: 5rem;
+    color: #FDC15F;
+}
+
+.btn-white{
+    background-color: white;
+    color:#9792E4;
+    padding: 1em 4em;
+}
