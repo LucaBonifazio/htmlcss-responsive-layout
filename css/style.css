@@ -184,13 +184,10 @@ img{
     text-align: center;
 }
 
-.btn-purple {
+.btn-arrow {
     background-color: #9792E4;
     border-radius: 10rem;
     padding: 1em;
-}
-
-.fa-arrow-down{
     color: black;
     font-size: 1em;
 }
@@ -230,5 +227,39 @@ img{
 
 .testimonial-name{
     font-size: 1.5em;
-    padding: 1em;s
+    padding: 1em;
 }
+
+/* section 4 */
+
+.purple-sect h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.benefict-card{
+    background-color: white;
+    border-radius: 1em;
+    padding: 2em;
+    color: #9792E4;
+    margin: 2em 0;
+}
+
+.number{
+    font-size: 4rem;
+}
+
+.benefict-card p{
+    padding: 2em 0;
+    color: #000000;
+}
+
+.btn-purple{
+    background-color: #9792E4;
+    color: #ffffff;
+    border-radius: 2em;
+    padding: .5em 2em;
+}
+
+/* section 5 */
