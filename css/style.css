@@ -141,7 +141,7 @@ img{
     padding: 1rem;
 }
 
-.fa-solid{
+.icon{
     font-size: 5rem;
     color: #0084FD;
 }
@@ -199,20 +199,36 @@ img{
 
 .testimonial{
     text-align: center;
+}
+
+.testimonial-text{
     padding: 3rem 0;
 }
 
-.testimonial h1{
+.testimonial-text h1{
     color: #9792E4;
     padding: 2rem 0;
+    font-size: 3rem;
 }
 
 .testimonial-card{
     background-color: #9792E4;
     border-radius: 2em;
     text-align: center;
+    margin: 2rem 0;
 }
 
-.card-img{
+.card-img img{
     border-radius: 10rem;
+    max-width: 20em;
+    padding: 2em;
+}
+
+.card-content{
+    color: white;
+}
+
+.testimonial-name{
+    font-size: 1.5em;
+    padding: 1em;s
 }
