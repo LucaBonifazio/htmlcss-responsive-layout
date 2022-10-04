@@ -32,6 +32,7 @@ img{
 /* navbar */
 
 .nav-top{
+    position: relative;
     background-color: #0084FD;
     height: 4.7rem;
 }
@@ -49,6 +50,23 @@ img{
 
 .nav-top ul{
     display: none;
+    position: absolute;
+    top: 4.7rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: white;
+    list-style: none; 
+}
+
+.nav-top li{
+    padding: 1rem;
+    border-bottom: 1px solid grey;
+}
+
+.nav-top .nav-link{
+    text-decoration: none;
+    color: black;
 }
 
 .hamburger .fa-bars{
@@ -56,19 +74,26 @@ img{
     font-size: 1.25rem;
 }
 
+.nav-top .hamburger:hover + ul{
+    display: block;
+}
+
 @media screen and (min-width: 811px) {
    
     .nav-top ul{
         display: flex;
         align-items: center;
+        position: static;
+        background-color: transparent;
         height: 100%;
-        list-style: none; 
     }
     
     .nav-top li{
         display: flex;
         align-items: center;
         height: 100%;
+        padding: 0;
+        border: none;
     }
     
     .nav-top .nav-link{
@@ -104,16 +129,18 @@ img{
 
 /* section 1 */
 
-/* .cards{
+.features{
     display: flex;
-    flex-direction: column;
-} */
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
 
 .card{
+    flex: 1 1 100%;
+    padding: 1rem;
     background-color: #B5DDFF;
-    border-radius: 1rem;
-    padding: 0 1em;
-    margin: 1rem auto;
+    border-radius: 2rem;
 }
 
 .card h2{
@@ -131,9 +158,11 @@ img{
     padding: .4em 3em;
 }
 
-.big-card-img img{
-    display: block;
+.big-card-img{
+    display: flex;
     padding-top: 2em;
+    width: 195px;
+    margin: 0 auto -1rem;
 }
 
 .icon-card{
@@ -146,13 +175,30 @@ img{
     color: #0084FD;
 }
 
-/* @media screen and (min-width: 811px) {
-    .cards{
-        display: flex;
-        flex-direction: row;
+@media screen and (min-width: 376px) {
+    .card{
+        flex-basis: calc((100% - 2rem) / 3);
     }
 
-}  */
+    .big-card{
+        flex-basis: calc(100% - calc((100% - 2rem) / 3) - 1rem);
+    }
+
+    .big-card-img img{
+        justify-content: flex-start;
+    }
+} 
+
+@media screen and (min-width:811px) {
+    .big-card-img img{
+        flex: 0 0 50%;
+    }
+
+    .big-card-img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 /* section 2 */
 
@@ -215,19 +261,34 @@ img{
     margin: 2rem 0;
 }
 
-.card-img img{
+.testimonial-img img{
     border-radius: 10rem;
-    max-width: 20em;
+    width: 13rem;
+    height: 13rem;
     padding: 2em;
+    overflow: hidden;
+    object-fit: cover;
 }
 
-.card-content{
+.testimonial-content{
     color: white;
 }
 
 .testimonial-name{
     font-size: 1.5em;
     padding: 1em;
+}
+
+@media screen and (min-width:375px) {
+    .testimonial-card{
+        display: flex;
+    }
+
+    .testimonial-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 /* section 4 */
@@ -295,6 +356,17 @@ img{
     color: #9792E4;
     font-size: 1.5em;
     padding: 1em 0;
+}
+
+@media screen and (min-width:375px) {
+    .about-container{
+        display: flex;
+        flex-basis: calc(100% / 2);
+    }
+
+    .about-us{
+        flex: 1 0 50%;
+    }
 }
 
 /* section 6 */
