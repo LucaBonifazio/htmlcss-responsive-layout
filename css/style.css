@@ -56,7 +56,7 @@ img{
     right: 0;
     text-align: center;
     background-color: white;
-    list-style: none; 
+    list-style: none;
 }
 
 .nav-top li{
@@ -79,7 +79,7 @@ img{
 }
 
 @media screen and (min-width: 811px) {
-   
+
     .nav-top ul{
         display: flex;
         align-items: center;
@@ -87,7 +87,7 @@ img{
         background-color: transparent;
         height: 100%;
     }
-    
+
     .nav-top li{
         display: flex;
         align-items: center;
@@ -95,7 +95,7 @@ img{
         padding: 0;
         border: none;
     }
-    
+
     .nav-top .nav-link{
         display: flex;
         align-items: center;
@@ -108,13 +108,13 @@ img{
     .nav-top .nav-link:hover{
         background-color: rgb(100, 234, 234);
     }
-    
+
     .nav-top .btn{
         background-color: white;
         color: black;
         padding: .5rem;
     }
-    
+
     .nav-top .btn:hover{
         background-color: lightgrey;
     }
@@ -122,7 +122,7 @@ img{
     .hamburger{
         display: none;
     }
-    
+
 }
 
 /* main */
@@ -130,6 +130,10 @@ img{
 /* section 1 */
 
 .features{
+    padding: 1rem 0;
+}
+
+.features .container{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -152,17 +156,27 @@ img{
     padding: 1em 0;
 }
 
+.big-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.big-card-text{
+    flex: 0 0 100%
+}
+
 .big-card .btn-apple{
     background-color: #0084FD;
     color: white;
     padding: .4em 3em;
 }
 
-.big-card-img{
-    display: flex;
-    padding-top: 2em;
+.big-card img{
+    display: block;
     width: 195px;
-    margin: 0 auto -1rem;
+    margin-bottom: -1rem;
 }
 
 .icon-card{
@@ -184,17 +198,18 @@ img{
         flex-basis: calc(100% - calc((100% - 2rem) / 3) - 1rem);
     }
 
-    .big-card-img img{
+    .big-card{
         justify-content: flex-start;
+
     }
-} 
+}
 
 @media screen and (min-width:811px) {
-    .big-card-img img{
+    .big-card-text{
         flex: 0 0 50%;
     }
 
-    .big-card-img{
+    .big-card img{
         margin-left: auto;
         margin-right: auto;
     }
@@ -204,27 +219,24 @@ img{
 
 .purple-sect{
     background-color: #9792E4;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
-.planner{
+.planner-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     color: white;
+    padding: 1rem;
 }
 
-.plan-text{
-    padding-top: 2rem;
-}
-
-.plan-text h2{
-    padding-bottom: 2rem;
-}
-
-.plan-text p{
-    padding-bottom: 2rem;
+.planner-container p{
+    padding: 1rem 0;
 }
 
 .develop {
     background-color: white;
+    color: #000000;
     border-radius: 2em;
     padding: 1rem;
     text-align: center;
@@ -236,6 +248,13 @@ img{
     padding: 1em;
     color: black;
     font-size: 1em;
+}
+
+@media screen and (min-width: 376px) {
+  .planner-container{
+    display: flex;
+    max-width: 810px;
+  }
 }
 
 /* section 3 */
@@ -297,6 +316,7 @@ img{
     color: white;
     text-align: center;
     font-size: 2.5rem;
+    width: 100%;
 }
 
 .benefict-card{
@@ -304,7 +324,6 @@ img{
     border-radius: 1em;
     padding: 2em;
     color: #9792E4;
-    margin: 2em 0;
 }
 
 .number{
@@ -321,6 +340,24 @@ img{
     color: #ffffff;
     border-radius: 2em;
     padding: .5em 2em;
+}
+
+@media screen and (min-width:376px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .benefict-card{
+        flex: 1 1 calc((100% - 2rem) / 2);
+    }
+}
+
+@media screen and (min-width:811px) {
+      .benefict-card{
+        flex-basis: calc((100% - 2rem) / 3);
+    }
 }
 
 /* section 5 */
@@ -366,6 +403,7 @@ img{
 
     .about-us{
         flex: 1 0 50%;
+        padding: 1rem;
     }
 }
 
